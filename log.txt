@@ -1,0 +1,2 @@
+May 18, 2017 11:14:23 AM se.kth.ict.nextgenpos.view.View enterItem
+INFO: , ERROR: Exception thrown in class ProductCatalog on line 38.
