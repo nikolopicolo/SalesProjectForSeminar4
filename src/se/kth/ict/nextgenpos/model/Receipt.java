@@ -22,11 +22,17 @@ public class Receipt {
 	createReceiptLines(sale);
     }
 
-    private void createReceiptLines(Sale sale) {
-	sale.resetLineItemIterator();
-	while (sale.hasMoreLineItems()) {
-	    receiptLines.add(sale.nextLineItem());
-	}
+    /**
+     * Creates receipt lines for the items purchesed
+     * @param sale The specific sale that has been paid for
+     */
+    private void createReceiptLines(Sale sale)
+    {
+	    sale.resetLineItemIterator();
+	    while (sale.hasMoreLineItems())
+        {
+	        receiptLines.add(sale.nextLineItem());
+	    }
     }
 
     /**
@@ -35,7 +41,7 @@ public class Receipt {
      * @return The amount of change the customer should have.
      */
     public int getChange() {
-	return payedAmount - totalCost;
+	    return payedAmount - totalCost;
     }
 
     /**
@@ -45,7 +51,7 @@ public class Receipt {
      */
     public String toString() {
 	//create a string that can be printed on the receipt.
-	return null; //Sould return the string created above.
+	return null; //Should return the string created above.
     }
 
 }

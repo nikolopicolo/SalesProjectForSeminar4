@@ -1,8 +1,5 @@
 package se.kth.ict.nextgenpos.model;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
 
 /**
  * Used for printing standardized messages to the view in case of errors.

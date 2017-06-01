@@ -21,11 +21,12 @@ public class ProductSpecification {
 	this.price = price;
     }
 
-    public int getPrice() {
-	return price;
+
+    public int getPrice()
+    {
+	    return price;
     }
 
-    //More get methods.
 
     public String toString() {
 	return "Product id: " + productId + ", name: " + name + 

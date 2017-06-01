@@ -1,2 +1,11 @@
-May 18, 2017 11:14:23 AM se.kth.ict.nextgenpos.view.View enterItem
-INFO: , ERROR: Exception thrown in class ProductCatalog on line 38.
+Jun 01, 2017 8:33:55 PM se.kth.ict.nextgenpos.view.View stateHasChanged
+INFO: Product id: 1, name: low fat milk, price:10
+description: a very long description, a very long description, a very long description
+Jun 01, 2017 8:33:55 PM se.kth.ict.nextgenpos.view.View stateHasChanged
+INFO: Product id: 2, name: butter, price:10
+description: a very long description, a very long description, a very long description
+Jun 01, 2017 8:33:55 PM se.kth.ict.nextgenpos.view.View stateHasChanged
+INFO: Product id: 3, name: bread, price:10
+description: a very long description, a very long description, a very long description
+Jun 01, 2017 8:33:55 PM se.kth.ict.nextgenpos.view.View enterItem
+INFO: , ERROR: Exception thrown in class ProductCatalog on line 38. The item id does not exist.

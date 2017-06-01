@@ -32,6 +32,7 @@ public class Main {
 		}
 		Controller cont = new Controller();
 		View view = new View(cont);
+		view.stateHasChanged();
 		view.test();
     }
 }

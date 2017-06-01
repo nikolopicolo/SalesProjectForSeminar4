@@ -50,24 +50,29 @@ public class Sale {
      *
      * @return All information needed for the receipt.
      */
-    public Receipt createReceipt(int payedAmount) {
-	this.payedAmount = payedAmount;
-	return new Receipt(this);
+    public Receipt createReceipt(int payedAmount)
+    {
+	    this.payedAmount = payedAmount;
+	    return new Receipt(this);
     }
 
-    void resetLineItemIterator() {
-	iterator = 0;
+    void resetLineItemIterator()
+    {
+	    iterator = 0;
     }
 
-    SalesLineItem nextLineItem() {
-	return lineItems.get(iterator);
+    SalesLineItem nextLineItem()
+    {
+	    return lineItems.get(iterator);
     }
 
-    boolean hasMoreLineItems() {
-	return iterator < lineItems.size();
+    boolean hasMoreLineItems()
+    {
+	    return iterator < lineItems.size();
     }
 
-    int getPayedAmount() {
-	return payedAmount;
+    int getPayedAmount()
+    {
+	    return payedAmount;
     }
 }

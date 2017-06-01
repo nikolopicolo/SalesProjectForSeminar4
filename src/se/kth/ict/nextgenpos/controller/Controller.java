@@ -17,10 +17,18 @@ public class Controller {
     /**
      * Instantiates a new <code>Controller</code>.
      */
-    public Controller() {
-	catalog = new ProductCatalog();
+    public Controller()
+    {
+	    catalog = new ProductCatalog();
     }
-    
+
+    public ProductCatalog getCatalog()
+    {
+        return catalog;
+    }
+
+
+
     /**
      * Initiates a new sale. Must be called before <code>enterItem()</code>. 
      *
@@ -41,7 +49,8 @@ public class Controller {
      * @return               Information about the entered item.
      * @throws IllegalStateException If this method is called before makeNewSale().
      */
-    public ProductSpecification enterItem(int itemId, int quantity) throws ItemIdDoesNotExistException {
+    public ProductSpecification enterItem(int itemId, int quantity) throws ItemIdDoesNotExistException
+    {
 	if (sale == null) {
 	    throw new IllegalStateException("enterItem() called before makeNewSale()");
 	}
@@ -58,11 +67,13 @@ public class Controller {
      *                               the current sale.
      * @throws IllegalStateException If this method is called before makeNewSale().
      */
-    public int getTotalCost() {
-	if (sale == null) {
+    public int getTotalCost()
+    {
+	    if (sale == null)
+	{
 	    throw new IllegalStateException("enterItem() called before makeNewSale()");
-	}
-	return sale.getCurrentTotal();
+    }
+	    return sale.getCurrentTotal();
     }
 
     /**
@@ -70,8 +81,11 @@ public class Controller {
      *
      * @return All information needed for the receipt.
      */
-    public Receipt makePayment(int payedAmount) {
-	return sale.createReceipt(payedAmount);
+    public Receipt makePayment(int payedAmount)
+    {
+	    return sale.createReceipt(payedAmount);
     }
+
+
 
 }
